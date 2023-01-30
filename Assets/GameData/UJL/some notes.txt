@@ -1,0 +1,9 @@
+File structure goes something like this:
+
+.../GameData will house all song-specific files, in this structure: game/songName/dataType
+
+For example, the song that plays when youre playing as PaRappa in stage 2 of UJL and you're rappin' bad would be located at Assets/GameData/UJL/FireFire/Songs/PaRappaBad.wav .
+
+In the game/songName directory will house the songName-data.json file (UJL will have two for each MC). This file has all the data for the data directory, song directory, chart, and other relevant data.
+
+Currently, the sprite and scene will all remain hardcoded until we figure out how to unhardcode everything
