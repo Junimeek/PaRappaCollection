@@ -1,5 +1,11 @@
-# The PaRappa the Rapper Collection
+### useless information
+![GitHub last commit](https://img.shields.io/github/last-commit/Junimeek/PaRappaCollection?logo=github)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Junimeek/PaRappaCollection)
+![GitHub Repo stars](https://img.shields.io/github/stars/Junimeek/PaRappaCollection?style=social)\
 [![CodeFactor](https://www.codefactor.io/repository/github/junimeek/parappacollection/badge)](https://www.codefactor.io/repository/github/junimeek/parappacollection)
+
+# The PaRappa the Rapper Collection
+
 
 It's PaRappa. But in Unity!
 
@@ -12,8 +18,8 @@ If you'd like to help, please friend and DM me on Discord ( Junimeek#5738 ), bec
 If you'd like to edit the game, this project is using [Unity 2021.3.13f1](https://unity.com/releases/editor/whats-new/2021.3.13), because it was the most convenient version for me to install at the time 😋
 
 ## Contributors
-- Junimeek: Sprites and audio, programming
-- pahaze: Programming
+- [Junimeek](https://github.com/Junimeek): Sprites and audio, programming
+- [pahaze](https://github.com/pahaze): Programming
 
 ## The to-do list
 - [x] Make the GitHub repository
