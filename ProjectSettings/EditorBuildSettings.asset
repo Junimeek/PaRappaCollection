@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UJL/FireFire.unity
     guid: fb4b49517b0ed314a8168419694610cd
+  - enabled: 1
+    path: Assets/Scenes/UJL/PowerOn.unity
+    guid: 0b34d252446f1b940a4852b8ea24c3f6
   m_configObjects: {}
