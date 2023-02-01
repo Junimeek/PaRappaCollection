@@ -11,12 +11,13 @@ public class FireScene : MonoBehaviour
     [SerializeField] private GameObject DebugInstructions;
     public bool isSongPlaying;
     public bool isMetronome;
-    public bool isVideoPlaying;
+    private GameManager gameManager;
 
     private void Awake()
     {
         isSongPlaying = false;
         isMetronome = false;
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     public void BeginFireSong()
@@ -59,14 +60,12 @@ public class FireScene : MonoBehaviour
             isMetronome = false;
         }
         
-        if (isVideoPlaying == false && Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            isVideoPlaying = true;
-            FindObjectOfType<FireCutscene>().PlayCutscene();
-        }
-        else if (isVideoPlaying == true && Input.GetKeyDown(KeyCode.V))
-        {
-            isVideoPlaying = false;
+            if (gameManager.EnterButtonState == "SkipCutscene")
+            {
+                gameManager.isVideoPlaying = false;
+            }
         }
     }
 

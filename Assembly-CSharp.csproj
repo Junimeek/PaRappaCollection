@@ -45,12 +45,14 @@
      <Compile Include="Assets\Scripts\UJL\FireScene\FireCutscene.cs" />
      <Compile Include="Assets\Scripts\UJL\UJL_Subtitles.cs" />
      <Compile Include="Assets\Scripts\UJL\TapBar\UJL_TapBar.cs" />
-     <Compile Include="Assets\Scripts\UJL\UJL_Initialization.cs" />
+     <Compile Include="Assets\Scripts\UJL\UJL_GameState.cs" />
      <Compile Include="Assets\Scripts\LoadingManager.cs" />
      <Compile Include="Assets\Scripts\Launcher\TabGroup.cs" />
      <Compile Include="Assets\Scripts\UJL\FireScene\Metronome.cs" />
      <Compile Include="Assets\Scripts\SavedataManager.cs" />
      <Compile Include="Assets\Scripts\UJL\FireScene\FireBeats.cs" />
+     <Compile Include="Assets\Scripts\UJL\Menu\LammyMenuStartup.cs" />
+     <Compile Include="Assets\Scripts\UJL\PowerOnScene\PowerOnCutscene.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
