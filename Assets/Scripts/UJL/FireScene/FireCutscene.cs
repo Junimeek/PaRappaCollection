@@ -42,9 +42,9 @@ public class FireCutscene : MonoBehaviour
 
     public void PlayCutscene()
     {
+        gameManager.isVideoPlaying = true;
         renderTexture.SetActive(true);
         levoid.SetActive(true);
-        gameManager.isVideoPlaying = true;
 
         if (gamestate.GameMode == 1)
         {

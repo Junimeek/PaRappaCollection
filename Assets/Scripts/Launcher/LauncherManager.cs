@@ -7,12 +7,14 @@ public class LauncherManager : MonoBehaviour
     [SerializeField] private GameObject startMenu;
     [SerializeField] private GameObject playMenu;
     [SerializeField] private GameObject settingsMenu;
+    [SerializeField] private GameObject creditsMenu;
 
     private void Awake()
     {
         startMenu.SetActive(true);
         playMenu.SetActive(false);
         settingsMenu.SetActive(false);
+        creditsMenu.SetActive(false);
     }
 
     public void BackButton()
@@ -20,6 +22,7 @@ public class LauncherManager : MonoBehaviour
         startMenu.SetActive(true);
         playMenu.SetActive(false);
         settingsMenu.SetActive(false);
+        creditsMenu.SetActive(false);
     }
 
     public void QuitButton()
@@ -38,6 +41,28 @@ public class LauncherManager : MonoBehaviour
     {
         startMenu.SetActive(false);
         settingsMenu.SetActive(true);
+    }
+
+    public void ShowCreditsMenu()
+    {
+        startMenu.SetActive(false);
+        creditsMenu.SetActive(true);
+    }
+
+    public void OpenLink(string thelink)
+    {
+        if (thelink == "juni")
+        {
+            Application.OpenURL("https://github.com/Junimeek");
+        }
+        else if (thelink == "fry")
+        {
+            Application.OpenURL("https://github.com/pahaze");
+        }
+        else if (thelink == "git")
+        {
+            Application.OpenURL("https://github.com/Junimeek/PaRappaCollection");
+        }
     }
 
     public void noyourafool()

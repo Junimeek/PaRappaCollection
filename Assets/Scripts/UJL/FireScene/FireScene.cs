@@ -12,12 +12,19 @@ public class FireScene : MonoBehaviour
     public bool isSongPlaying;
     public bool isMetronome;
     private GameManager gameManager;
+    private FireCutscene cutscene;
 
     private void Awake()
     {
         isSongPlaying = false;
         isMetronome = false;
         gameManager = FindObjectOfType<GameManager>();
+        cutscene = FindObjectOfType<FireCutscene>();
+    }
+
+    private void Start()
+    {
+        StartCoroutine(OnLevelLoaded());
     }
 
     public void BeginFireSong()
@@ -66,7 +73,38 @@ public class FireScene : MonoBehaviour
             {
                 gameManager.isVideoPlaying = false;
             }
+            else if (gameManager.EnterButtonState == "EndGame")
+            {
+                LammyFireInstGood.Stop();
+                gameManager.EnterButtonState = "Nothing";
+                FindObjectOfType<TryAgainScreen>().ShowEndScreen();
+            }
         }
+    }
+
+    private IEnumerator OnLevelLoaded()
+    {
+        while (gameManager.isLoading)
+        {
+            yield return null;
+        }
+
+        StartCoroutine(OnCutsceneEnd());
+        StopCoroutine(OnLevelLoaded());
+    }
+
+    private IEnumerator OnCutsceneEnd()
+    {
+        gameManager.isVideoPlaying = true;
+
+        while (gameManager.isVideoPlaying)
+        {
+            yield return null;
+        }
+
+        gameManager.EnterButtonState = "EndGame";
+        LammyFireInstGood.Play();
+        StopCoroutine(OnCutsceneEnd());
     }
 
     

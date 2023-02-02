@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class SavedataManager : MonoBehaviour
 {
+    private static SavedataManager instance;
     public string CurrentGame;
     public string SongPath;
     public string DataPath;
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
     }
 
     [SerializeField] private ChartData _SongData = new ChartData();

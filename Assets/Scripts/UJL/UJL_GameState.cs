@@ -32,4 +32,11 @@ public class UJL_GameState : MonoBehaviour
     {
         GameMode = setGM;
     }
+
+    public void QuitUJL()
+    {
+        gameManager.currentGame = 0;
+        FindObjectOfType<LoadingManager>().LoadScene("Launcher");
+        Destroy(gameObject);
+    }
 }

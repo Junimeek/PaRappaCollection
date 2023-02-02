@@ -6,10 +6,15 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
     public bool isLoading;
+    public bool isVideoPlaying;
+    public bool isTryAgain;
+    public string EnterButtonState;
+
+    [Header("Gameplay")]
     public int currentGame;
     public int curRank;
-    public bool isVideoPlaying;
-    public string EnterButtonState;
+    public int curScore;
+    
 
     void Awake()
     {
@@ -23,9 +28,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentGame = 0;
+        curScore = 0;
         isLoading = false;
+        isVideoPlaying = false;
         EnterButtonState = "Nothing";
     }
-
-
 }
