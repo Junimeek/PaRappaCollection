@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameMode: 0
+  gameManager: {fileID: 0}
 --- !u!4 &62942366
 Transform:
   m_ObjectHideFlags: 0
@@ -679,8 +680,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 62942365}
-        m_TargetAssemblyTypeName: UJL_GameState, Assembly-CSharp
+      - m_Target: {fileID: 639027513}
+        m_TargetAssemblyTypeName: LammyMenuStartup, Assembly-CSharp
         m_MethodName: QuitUJL
         m_Mode: 1
         m_Arguments:
@@ -2090,8 +2091,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 62942365}
-        m_TargetAssemblyTypeName: UJL_Initialization, Assembly-CSharp
+      - m_Target: {fileID: 639027513}
+        m_TargetAssemblyTypeName: LammyMenuStartup, Assembly-CSharp
         m_MethodName: SetGameStateMode
         m_Mode: 3
         m_Arguments:
@@ -2102,8 +2103,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 62942365}
-        m_TargetAssemblyTypeName: UJL_Initialization, Assembly-CSharp
+      - m_Target: {fileID: 639027513}
+        m_TargetAssemblyTypeName: LammyMenuStartup, Assembly-CSharp
         m_MethodName: LoadGameState
         m_Mode: 5
         m_Arguments:
@@ -2718,8 +2719,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 62942365}
-        m_TargetAssemblyTypeName: UJL_Initialization, Assembly-CSharp
+      - m_Target: {fileID: 639027513}
+        m_TargetAssemblyTypeName: LammyMenuStartup, Assembly-CSharp
         m_MethodName: SetGameStateMode
         m_Mode: 3
         m_Arguments:
@@ -2730,8 +2731,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 62942365}
-        m_TargetAssemblyTypeName: UJL_Initialization, Assembly-CSharp
+      - m_Target: {fileID: 639027513}
+        m_TargetAssemblyTypeName: LammyMenuStartup, Assembly-CSharp
         m_MethodName: LoadGameState
         m_Mode: 5
         m_Arguments:
@@ -2864,8 +2865,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 62942365}
-        m_TargetAssemblyTypeName: UJL_Initialization, Assembly-CSharp
+      - m_Target: {fileID: 639027513}
+        m_TargetAssemblyTypeName: LammyMenuStartup, Assembly-CSharp
         m_MethodName: SetGameStateMode
         m_Mode: 3
         m_Arguments:
@@ -2876,8 +2877,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 62942365}
-        m_TargetAssemblyTypeName: UJL_Initialization, Assembly-CSharp
+      - m_Target: {fileID: 639027513}
+        m_TargetAssemblyTypeName: LammyMenuStartup, Assembly-CSharp
         m_MethodName: LoadGameState
         m_Mode: 5
         m_Arguments:
@@ -3067,7 +3068,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4279704699
-  m_fontColor: {r: 0.4811321, g: 0.111091316, b: 0.088510156, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

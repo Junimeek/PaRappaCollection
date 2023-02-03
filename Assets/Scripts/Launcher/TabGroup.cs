@@ -70,4 +70,14 @@ public class TabGroup : MonoBehaviour
             button.background.sprite = tabIdle;
         }
     }
+
+    public void TheGreatReset()
+    {
+        selectedTab = null;
+
+        for (int i=0; i<objectsToSwap.Count; i++)
+        {
+            objectsToSwap[i].SetActive(false);
+        }
+    }
 }

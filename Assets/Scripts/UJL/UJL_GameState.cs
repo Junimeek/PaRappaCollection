@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class UJL_GameState : MonoBehaviour
 {
     public int GameMode;
-    private GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
     private static UJL_GameState instance;
 
     private void Awake()
@@ -17,26 +17,17 @@ public class UJL_GameState : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            gameManager = FindObjectOfType<GameManager>();
+            gameManager.currentGame = 2;
         }
-
-        gameManager = FindObjectOfType<GameManager>();
-        gameManager.currentGame = 2;
-    }
-
-    public void LoadGameState(string sceneName)
-    {
-        FindObjectOfType<LoadingManager>().LoadScene(sceneName);
+        else if (instance != null)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void SetGameStateMode(int setGM)
     {
         GameMode = setGM;
-    }
-
-    public void QuitUJL()
-    {
-        gameManager.currentGame = 0;
-        FindObjectOfType<LoadingManager>().LoadScene("Launcher");
-        Destroy(gameObject);
     }
 }

@@ -48,12 +48,12 @@
      <Compile Include="Assets\Scripts\UJL\TapBar\UJL_TapBar.cs" />
      <Compile Include="Assets\Scripts\UJL\UJL_GameState.cs" />
      <Compile Include="Assets\Scripts\LoadingManager.cs" />
+     <Compile Include="Assets\Scripts\UJL\Menu\TryAgainScreen.cs" />
      <Compile Include="Assets\Scripts\Launcher\TabGroup.cs" />
      <Compile Include="Assets\Scripts\UJL\FireScene\Metronome.cs" />
      <Compile Include="Assets\Scripts\UJL\PowerOnScene\PowerOnCutscene.cs" />
      <Compile Include="Assets\Scripts\SavedataManager.cs" />
      <Compile Include="Assets\Scripts\UJL\FireScene\FireBeats.cs" />
-     <Compile Include="Assets\Scripts\UJL\Menu\TryAgainScreen.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

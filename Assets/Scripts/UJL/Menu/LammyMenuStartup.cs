@@ -10,11 +10,13 @@ public class LammyMenuStartup : MonoBehaviour
     [SerializeField] private VideoPlayer Title;
     [SerializeField] private GameObject levoid;
     [SerializeField] private GameObject videoTexture;
+    private UJL_GameState lammygamestate;
     private GameManager gameManager;
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
+        lammygamestate = FindObjectOfType<UJL_GameState>();
     }
 
     public void Start()
@@ -90,5 +92,22 @@ public class LammyMenuStartup : MonoBehaviour
     {
         gameManager.isVideoPlaying = false;
         TitleLoop.Play();
+    }
+
+    public void QuitUJL()
+    {
+        gameManager.currentGame = 0;
+        FindObjectOfType<LoadingManager>().LoadScene("Launcher");
+        Destroy(lammygamestate.gameObject);
+    }
+
+    public void LoadGameState(string sceneName)
+    {
+        FindObjectOfType<LoadingManager>().LoadScene(sceneName);
+    }
+
+    public void SetGameStateMode(int setGM)
+    {
+        FindObjectOfType<UJL_GameState>().SetGameStateMode(setGM);
     }
 }

@@ -6,18 +6,26 @@ using System.Linq;
 
 public class FireScene : MonoBehaviour
 {
-    [SerializeField] private AudioSource LammyFireInstGood;
-    [SerializeField] private AudioSource LammyFireVoices;
-    [SerializeField] private GameObject DebugInstructions;
+    
     public bool isSongPlaying;
     public bool isMetronome;
+
     private GameManager gameManager;
     private FireCutscene cutscene;
+    private UJL_GameState gameState;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource LammyFireInstGood;
+    [SerializeField] private AudioSource PaRappaFireInstGood;
+    [SerializeField] private AudioSource LammyFireVoices;
+    [SerializeField] private GameObject DebugInstructions;
+
 
     private void Awake()
     {
         isSongPlaying = false;
         isMetronome = false;
+        gameState = FindObjectOfType<UJL_GameState>();
         gameManager = FindObjectOfType<GameManager>();
         cutscene = FindObjectOfType<FireCutscene>();
     }
@@ -29,11 +37,19 @@ public class FireScene : MonoBehaviour
 
     public void BeginFireSong()
     {
-        LammyFireInstGood.Play();
+        if (gameState.GameMode == 1)
+        {
+            LammyFireInstGood.Play();
+        }
+        else if (gameState.GameMode == 2)
+        {
+            PaRappaFireInstGood.Play();
+        }
     }
     public void EndFireSong()
     {
         LammyFireInstGood.Stop();
+        PaRappaFireInstGood.Stop();
     }
 
     public void Update()
@@ -76,6 +92,7 @@ public class FireScene : MonoBehaviour
             else if (gameManager.EnterButtonState == "EndGame")
             {
                 LammyFireInstGood.Stop();
+                PaRappaFireInstGood.Stop();
                 gameManager.EnterButtonState = "Nothing";
                 FindObjectOfType<TryAgainScreen>().ShowEndScreen();
             }
@@ -103,7 +120,7 @@ public class FireScene : MonoBehaviour
         }
 
         gameManager.EnterButtonState = "EndGame";
-        LammyFireInstGood.Play();
+        BeginFireSong();
         StopCoroutine(OnCutsceneEnd());
     }
 

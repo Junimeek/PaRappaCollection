@@ -33,8 +33,9 @@ public class LauncherManager : MonoBehaviour
 
     public void ShowPlayMenu()
     {
-        startMenu.SetActive(false);
         playMenu.SetActive(true);
+        startMenu.SetActive(false);
+        FindObjectOfType<TabGroup>().TheGreatReset();
     }
 
     public void ShowSettingsMenu()
