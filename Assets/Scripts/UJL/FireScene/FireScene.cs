@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using System.IO;
 using System.Linq;
 
 public class FireScene : MonoBehaviour
 {
+    PlayerControls controls;
     
     public bool isSongPlaying;
     public bool isMetronome;
@@ -28,11 +30,29 @@ public class FireScene : MonoBehaviour
         gameState = FindObjectOfType<UJL_GameState>();
         gameManager = FindObjectOfType<GameManager>();
         cutscene = FindObjectOfType<FireCutscene>();
+
+        controls = new PlayerControls();
+        controls.Gameplay.Start.performed += ctx => buttonStart();
     }
 
     private void Start()
     {
         StartCoroutine(OnLevelLoaded());
+    }
+
+    private void buttonStart()
+    {
+        gameManager.isVideoPlaying = false;
+    }
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
     }
 
     public void BeginFireSong()
@@ -83,6 +103,7 @@ public class FireScene : MonoBehaviour
             isMetronome = false;
         }
         
+        /*
         if (Input.GetKeyDown(KeyCode.Return))
         {
             if (gameManager.EnterButtonState == "SkipCutscene")
@@ -97,6 +118,7 @@ public class FireScene : MonoBehaviour
                 FindObjectOfType<TryAgainScreen>().ShowEndScreen();
             }
         }
+        */
     }
 
     private IEnumerator OnLevelLoaded()

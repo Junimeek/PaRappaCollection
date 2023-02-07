@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /*
 metronome script used: https://gist.github.com/bzgeb/c298c6189c73b2cf777c
@@ -8,6 +9,23 @@ metronome script used: https://gist.github.com/bzgeb/c298c6189c73b2cf777c
 
 public class FireBeats : MonoBehaviour
 {    
+    PlayerControls controls;
+    
+    private void Awake()
+    {
+        controls = new PlayerControls();
+    }
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
