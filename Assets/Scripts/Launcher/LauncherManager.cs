@@ -9,12 +9,18 @@ public class LauncherManager : MonoBehaviour
     [SerializeField] private GameObject settingsMenu;
     [SerializeField] private GameObject creditsMenu;
 
+    private GameManager gameManager;
+    private LoadingManager loader;
+
     private void Awake()
     {
         startMenu.SetActive(true);
         playMenu.SetActive(false);
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
+
+        gameManager = FindObjectOfType<GameManager>();
+        loader = FindObjectOfType<LoadingManager>();
     }
 
     public void BackButton()
@@ -48,6 +54,19 @@ public class LauncherManager : MonoBehaviour
     {
         startMenu.SetActive(false);
         creditsMenu.SetActive(true);
+    }
+
+    public void LaunchGame(string game)
+    {
+        
+        if (game == "UJL")
+        {
+            loader.LoadScene("UJL_Initialization");
+        }
+        else
+        {
+            noyourafool();
+        }
     }
 
     public void OpenLink(string thelink)

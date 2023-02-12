@@ -110,4 +110,9 @@ public class LammyMenuStartup : MonoBehaviour
     {
         FindObjectOfType<UJL_GameState>().SetGameStateMode(setGM);
     }
+
+    public void SetBPM(float BPM)
+    {
+        gameManager.curBPM = BPM;
+    }
 }

@@ -9,6 +9,7 @@ public class SavedataManager : MonoBehaviour
     public string SongPath;
     public string DataPath;
 
+    /*
     private void Awake()
     {
         if (instance == null)
@@ -17,6 +18,7 @@ public class SavedataManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
     }
+    */
 
     [SerializeField] private ChartData _SongData = new ChartData();
     public void SaveIntoJson(){

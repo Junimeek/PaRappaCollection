@@ -11,7 +11,7 @@ public class LoadingManager : MonoBehaviour
     public GameObject LammyBG;
     public float minLoadTime;
     private string targetScene;
-    [SerializeField] private GameManager gameManager;
+    private GameManager gameManager;
     [SerializeField] private Slider loadingBar;
 
     private void Awake()
@@ -24,6 +24,8 @@ public class LoadingManager : MonoBehaviour
 
         DefaultBG.SetActive(false);
         LammyBG.SetActive(false);
+
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     public void LoadScene(string sceneName)

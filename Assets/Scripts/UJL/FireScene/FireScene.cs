@@ -38,6 +38,8 @@ public class FireScene : MonoBehaviour
     private void Start()
     {
         StartCoroutine(OnLevelLoaded());
+
+        gameManager.curBPM = 100;
     }
 
     private void buttonStart()
