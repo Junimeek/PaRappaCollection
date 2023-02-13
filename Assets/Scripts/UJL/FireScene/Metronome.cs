@@ -37,6 +37,5 @@ public class Metronome : MonoBehaviour
             ticked = false;
             nextTick += timePerTick;
         }
-
     }
 }

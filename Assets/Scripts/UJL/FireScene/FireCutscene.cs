@@ -56,7 +56,6 @@ public class FireCutscene : MonoBehaviour
             PaRappaCutscene.Play();
             StartCoroutine(PaRappaEndCutscene());
         }
-        
     }
 
     private IEnumerator LammyEndCutscene()

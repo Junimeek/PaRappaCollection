@@ -30,7 +30,7 @@ public class UJL_TapBar : MonoBehaviour
 
     private void Update()
     {
-        currentyoffset = currentyoffset+((float)beatscript.bpm/(4.5f))*Time.deltaTime;
+        currentyoffset = currentyoffset+(((float)beatscript.bpm/4.5f)*Time.deltaTime);
         superSlider.transform.position = new Vector3(-95, currentyoffset, 0);
     }
 

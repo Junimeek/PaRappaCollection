@@ -58,7 +58,6 @@ public class LauncherManager : MonoBehaviour
 
     public void LaunchGame(string game)
     {
-        
         if (game == "UJL")
         {
             loader.LoadScene("UJL_Initialization");

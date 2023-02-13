@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
             isVideoPlaying = false;
             EnterButtonState = "Nothing";
         }
-
         else if (bootloader.DebugMode)
         {
             currentGame = bootloader.debugSetGame;

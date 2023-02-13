@@ -37,9 +37,8 @@ public class FireScene : MonoBehaviour
 
     private void Start()
     {
+        gameManager.curBPM = 100f;
         StartCoroutine(OnLevelLoaded());
-
-        gameManager.curBPM = 100;
     }
 
     private void buttonStart()
@@ -173,12 +172,9 @@ public class FireScene : MonoBehaviour
         }
     }
     */
-    
-
 
     /*
     vv  Animation shit i havent figured out yet  vv
-
 
     public Animator good;
     private int rank = FindObjectOfType<GameManager>().curRank;
