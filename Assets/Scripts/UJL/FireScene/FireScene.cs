@@ -22,6 +22,8 @@ public class FireScene : MonoBehaviour
     [SerializeField] private AudioSource LammyFireVoices;
     [SerializeField] private GameObject DebugInstructions;
 
+    [SerializeField] TextAsset lammyfile;
+    Dictionary<string, string> lammyclip;
 
     private void Awake()
     {
@@ -39,6 +41,10 @@ public class FireScene : MonoBehaviour
     {
         gameManager.curBPM = 100f;
         StartCoroutine(OnLevelLoaded());
+
+        // fry note: lammyclip needs to be updated, will do this later :) 
+        lammyclip = new Dictionary<string, string>();
+        FileReader.ReadVoicesAsset(lammyfile, lammyclip);
     }
 
     private void buttonStart()
@@ -146,32 +152,6 @@ public class FireScene : MonoBehaviour
         BeginFireSong();
         StopCoroutine(OnCutsceneEnd());
     }
-
-    
-    /*
-    [SerializeField] TextAsset lammyfile;
-    Dictionary<string, string> lammyclip;
-    void Start()
-    {
-        lammyclip = new Dictionary<string, string>();
-        ReadFile();
-    }
-    void ReadFile()
-    {
-        var splitFile = new string[] { "\r\n", "\r", "\n"};
-        var splitLine = new char[] { ':', ',' };
-        var Lines = lammyfile.text.Split(splitFile, System.StringSplitOptions.RemoveEmptyEntries);
-        for (int i = 0; i < Lines.Length; i++)
-        {
-            print(Lines[i]);
-            var line = Lines[i].Split(splitLine, System.StringSplitOptions.None);
-            string voiceSampleID = line[0];
-            string voiceSampleStart = line[1];
-            string voiceSampleLength = line[2];
-            lammyclip.Add(voiceSampleID, voiceSampleStart); // idk how to add a third variable
-        }
-    }
-    */
 
     /*
     vv  Animation shit i havent figured out yet  vv
