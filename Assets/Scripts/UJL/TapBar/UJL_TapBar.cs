@@ -19,7 +19,7 @@ public class UJL_TapBar : MonoBehaviour
     private void Awake()
     {
         initialSliderPosition = new Vector3(-95, 88, 0);
-        superSlider.transform.position = initialSliderPosition;
+        superSlider.transform.localPosition = initialSliderPosition;
         beatscript = FindObjectOfType<FireBeats>();
     }
 
@@ -31,11 +31,11 @@ public class UJL_TapBar : MonoBehaviour
     private void Update()
     {
         currentyoffset = currentyoffset+(((float)beatscript.bpm/4.5f)*Time.deltaTime);
-        superSlider.transform.position = new Vector3(-95, currentyoffset, 0);
+        superSlider.transform.localPosition = new Vector3(-95, currentyoffset, 0);
     }
 
     private void FixedUpdate()
     {
-        //superSlider.transform.position = new Vector3(-95, currentyoffset, 0);
+        //superSlider.transform.localPosition = new Vector3(-95, currentyoffset, 0);
     }
 }
