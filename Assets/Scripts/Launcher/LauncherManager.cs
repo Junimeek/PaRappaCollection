@@ -70,22 +70,22 @@ public class LauncherManager : MonoBehaviour
 
     public void OpenLink(string thelink)
     {
-        if (thelink == "juni")
-        {
-            Application.OpenURL("https://github.com/Junimeek");
-        }
-        else if (thelink == "fry")
-        {
-            Application.OpenURL("https://github.com/pahaze");
-        }
-        else if (thelink == "git")
-        {
-            Application.OpenURL("https://github.com/Junimeek/PaRappaCollection");
+        switch(thelink) {
+            case "juni":
+                Application.OpenURL("https://github.com/Junimeek");
+                break;
+            case "fry":
+                Application.OpenURL("https://github.com/pahaze");
+                break;
+            case "git":
+                Application.OpenURL("https://github.com/Junimeek/PaRappaCollection");
+                break;
         }
     }
 
     public void noyourafool()
     {
+        // You're* 🤓 - fry :-)
         Debug.LogError("this game doesnt exist yet you fool!");
     }
 
