@@ -7,6 +7,12 @@ using UnityEngine;
 public class LammyClipRead : MonoBehaviour
 {
     //[SerializeField] private TextAsset lammyfile;
+    private FileReader fileReader;
+
+    private void Awake()
+    {
+        fileReader = FindObjectOfType<FileReader>();
+    }
 
     private void Start()
     {

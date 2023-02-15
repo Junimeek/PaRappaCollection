@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class FileReader : MonoBehaviour
 {
+    private static FileReader instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     public static void ReadVoicesAsset(TextAsset Text, Dictionary<string, string> OutputDictionary, bool LogLines = true) {
         var Lines = ReadTextAsset(Text);
         var dataSeparators = new char[] {':', ','};

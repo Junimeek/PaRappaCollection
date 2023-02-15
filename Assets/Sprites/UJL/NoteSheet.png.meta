@@ -373,7 +373,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 66
+        y: 62
         width: 32
         height: 12
       alignment: 0
@@ -394,7 +394,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 50
+        y: 38
         width: 34
         height: 12
       alignment: 0
@@ -415,7 +415,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 34
+        y: 26
         width: 26
         height: 12
       alignment: 0
@@ -436,7 +436,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 18
+        y: 14
         width: 42
         height: 12
       alignment: 0
@@ -456,8 +456,8 @@ TextureImporter:
       name: NotCool
       rect:
         serializedVersion: 2
-        x: 48
-        y: 66
+        x: 32
+        y: 62
         width: 32
         height: 12
       alignment: 0
@@ -477,8 +477,8 @@ TextureImporter:
       name: NotGood
       rect:
         serializedVersion: 2
-        x: 48
-        y: 50
+        x: 34
+        y: 38
         width: 34
         height: 12
       alignment: 0
@@ -498,8 +498,8 @@ TextureImporter:
       name: NotBad
       rect:
         serializedVersion: 2
-        x: 48
-        y: 34
+        x: 26
+        y: 26
         width: 26
         height: 12
       alignment: 0
@@ -519,8 +519,8 @@ TextureImporter:
       name: NotAwful
       rect:
         serializedVersion: 2
-        x: 48
-        y: 18
+        x: 42
+        y: 14
         width: 42
         height: 12
       alignment: 0
@@ -561,7 +561,7 @@ TextureImporter:
       name: Num1
       rect:
         serializedVersion: 2
-        x: 14
+        x: 11
         y: 2
         width: 7
         height: 12
@@ -582,7 +582,7 @@ TextureImporter:
       name: Num2
       rect:
         serializedVersion: 2
-        x: 25
+        x: 18
         y: 2
         width: 10
         height: 12
@@ -603,7 +603,7 @@ TextureImporter:
       name: Num3
       rect:
         serializedVersion: 2
-        x: 37
+        x: 28
         y: 2
         width: 10
         height: 12
@@ -624,7 +624,7 @@ TextureImporter:
       name: Num4
       rect:
         serializedVersion: 2
-        x: 49
+        x: 38
         y: 2
         width: 10
         height: 12
@@ -645,7 +645,7 @@ TextureImporter:
       name: Num5
       rect:
         serializedVersion: 2
-        x: 61
+        x: 48
         y: 2
         width: 10
         height: 12
@@ -666,7 +666,7 @@ TextureImporter:
       name: Num6
       rect:
         serializedVersion: 2
-        x: 73
+        x: 58
         y: 2
         width: 10
         height: 12
@@ -687,7 +687,7 @@ TextureImporter:
       name: Num7
       rect:
         serializedVersion: 2
-        x: 85
+        x: 68
         y: 2
         width: 9
         height: 12
@@ -708,7 +708,7 @@ TextureImporter:
       name: Num8
       rect:
         serializedVersion: 2
-        x: 97
+        x: 77
         y: 2
         width: 10
         height: 12
@@ -729,7 +729,7 @@ TextureImporter:
       name: Num9
       rect:
         serializedVersion: 2
-        x: 110
+        x: 87
         y: 2
         width: 8
         height: 12
@@ -755,7 +755,7 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -776,7 +776,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -784,6 +784,237 @@ TextureImporter:
       bones: []
       spriteID: e86cb5143444d6340a359b7eee197871
       internalID: -2081444365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demo
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 50
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6589c21c4b4475f43bab4fbabe70485f
+      internalID: 1309223286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Replay
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 38
+        width: 43
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f359e9d952d71634988699f5c080107a
+      internalID: -1028652377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Score
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 26
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4755a4d379734e4486c3936ca8c0f70
+      internalID: -317403768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NumPlusMinus
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30aac831ef6886240979ea5e13cb11f1
+      internalID: 521714720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NumMinus
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 10
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88838dfdbab60c445905df172c9e4cd5
+      internalID: -1440895736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NumPlus
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4166252fa42494ca40500f0afa70bc
+      internalID: 532433848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fever1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a43505d83b2be249819a6e6ab94fb88
+      internalID: 1426470599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fever2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 50
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f60090f989ea4d4b9f96f61b66d040b
+      internalID: -1295736409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JpnDemo
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 26
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6252ee9fbd01fb4fbdfe5a34d8d711c
+      internalID: -1127291209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JpnReplay
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 14
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc394e327b4c97f42a6bcab9885c7823
+      internalID: -709597882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolMid
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 62
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df685336abe24e4fae4c986d57c5b7e
+      internalID: 1979961811
       vertices: []
       indices: 
       edges: []
@@ -800,37 +1031,48 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Num3: 175106556
-      Num4: -1092764179
-      TeacherTriangle: -2122394744
       Num9: 1304829680
+      PlayerCross: -218316584
       TeacherShuriken: -2081444365
+      Score: -317403768
+      NumMinus: -1440895736
+      PlayerSquare: -541924496
+      Num0: 1107744220
+      NumPlusMinus: 521714720
+      Fever2: -1295736409
+      CoolMid: 1979961811
+      TeacherCross: -1167599539
+      NotAwful: 2094467786
+      Num6: 867143346
+      TeacherLeft: 1389616180
+      Replay: -1028652377
+      NotCool: -1850874503
+      NotBad: 601098368
+      IsAwful: 542008367
+      PlayerShuriken: 1364799589
+      Num4: -1092764179
+      JpnReplay: -709597882
       Num2: -395792418
       PlayerTriangle: 688843223
       TeacherRight: -2028247350
       TeacherCircle: -1651455110
       IsBad: -371441112
-      PlayerShuriken: 1364799589
       Num5: 91042929
-      PlayerSquare: -541924496
       IsCool: 1193148742
-      Num0: 1107744220
-      TeacherCross: -1167599539
+      Fever1: 1426470599
       NotGood: -923708304
       PlayerCircle: -127171822
       IsGood: 1593981026
-      Num6: 867143346
+      JpnDemo: -1127291209
       PlayerRight: 1424298836
-      NotAwful: 2094467786
-      TeacherLeft: 1389616180
+      Demo: 1309223286
       Num1: -594252111
       PlayerLeft: 1670540821
       Num8: 1885183641
-      NotCool: -1850874503
       TeacherSquare: -871185407
-      IsAwful: 542008367
       Num7: 1911120190
-      NotBad: 601098368
-      PlayerCross: -218316584
+      NumPlus: 532433848
+      TeacherTriangle: -2122394744
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
